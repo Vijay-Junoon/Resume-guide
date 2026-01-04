@@ -6,6 +6,10 @@
 :root {
   --bg: white;
   --primaryColorLight: #c3fae8;
+  --headings: #1f3c88;
+  --hover: #2f5bea;
+  --bodyText: #5f6b7a;
+  --borders: #efe9f0
   --font: black;
   --bgcolor: #c3fae8;
   --slcolor: black;
@@ -30,7 +34,7 @@ html {
 
 body {
   background-color: var(--bg);
-  color: var(--font);
+  color: var(--bodyText);
   font-family: "Poppins", sans-serif;
 
   /* display: flex;
@@ -47,20 +51,23 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+    /* font-family: "Pixelify Sans", sans-serif !important; */
+
 }
 
 .logo {
   position: absolute;
-  bottom: -4rem;
-  left: 15rem;
+  /* bottom: -4rem; */
+  top: -5rem;
+  left: -4rem;
   height: auto;
   width: 25rem;
   z-index: -1;
 }
 
 h1 {
-  font-family: "Lobster", sans-serif;
-
+  /* font-family: "Pixelify Sans", sans-serif !important; */
+  color: var(--headings);
   font-size: 8rem;
   /* width: 50rem; */
 }
@@ -79,7 +86,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background-color: var(--bgcolor);
+  background-color: #d0ebff;
 }
 
 .navigation a {
@@ -99,7 +106,7 @@ h1 {
   border-radius: 25px;
   font-weight: 400;
   width: auto;
-  color: var(--secondaryAccent);
+  color: var(--headings);
   /* background-color: var(--hoverColor); */
   transform: scale(1.18);
 }
@@ -110,7 +117,7 @@ h1 {
   font-size: 1.5rem;
   display: flex;
   align-items: center;
-  background-color: var(--bgcolor);
+  background-color: #d0ebff;
 }
 
 /*                  Home box                 */
@@ -129,6 +136,7 @@ main {
 }
 
 .htext {
+  color: var(--headings);
   position: absolute;
   top: 1rem;
   left: 1.5rem;
@@ -145,7 +153,7 @@ main {
   /* padding-left: 5rem;
     padding-right: 10rem; */
   font-size: 1.5rem;
-  background-color: var(--bgcolor);
+  background-color: #d0ebff;
 }
 
 .holder {
@@ -186,8 +194,13 @@ main {
 }
 
 .btn {
-  background-color: var(--secondaryAccent) !important;
+  background-color: var(--headings) !important;
   padding: 15px !important;
+  transition: all 0.15s ease;
+}
+
+.btn:hover{
+  background-color: var(--hover) !important;
 }
 
 /*                about box           */
@@ -198,6 +211,8 @@ main {
 } */
 
 .atext {
+    color: var(--headings);
+
   position: absolute;
   top: 1rem;
   left: 1.5rem;
@@ -212,7 +227,7 @@ main {
   height: 35rem;
   width: 40rem;
   font-size: 1.5rem;
-  background-color: var(--bgcolor);
+  background-color: #d0ebff;
 }
 
 .aholder {
@@ -233,6 +248,8 @@ main {
 } */
 
 .ctext {
+    color: var(--headings);
+
   position: absolute;
   top: 1rem;
   left: 1.5rem;
@@ -250,7 +267,7 @@ main {
   /* padding-left: 5rem;
     padding-right: 10rem; */
   font-size: 1.5rem;
-  background-color: var(--bgcolor);
+  background-color: #d0ebff;
 }
 
 .cholder {
@@ -284,7 +301,7 @@ main {
   height: 35rem;
   width: 40rem;
   font-size: 1.5rem;
-  background-color: var(--bgcolor);
+  background-color: #d0ebff;
 }
 
 .aholder {
@@ -343,7 +360,7 @@ main {
   align-items: center;
   text-align: center;
   justify-content: space-evenly;
-  background-color: var(--bgcolor);
+  background-color: #e7f5ff;
   width: 20rem;
   height: 25rem;
   padding: 1rem;
@@ -407,7 +424,7 @@ main {
   width: 7rem;
   font-size: 1rem;
   border-radius: 8px;
-  background-color: var(--secondaryAccent);
+  background-color: var(--headings);
   outline: none;
   border: none;
   transition: all 0.15s ease;
